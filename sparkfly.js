@@ -1,6 +1,6 @@
 var express = require('express');
 var http = require('https');
-var configDetails = require('../config');
+var configDetails = require('./config');
 var router = express.Router();
 
 var authToken = {},
@@ -10,7 +10,7 @@ var authToken = {},
 /* To get the prism token from the database as per user's login*/
 
 var sql = require('mssql');
-var app = require('../server');
+var app = require('./server');
 
 
 router.post('/getSparkflyAuthentication', function(req, res) {

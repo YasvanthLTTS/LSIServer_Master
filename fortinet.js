@@ -4,7 +4,7 @@ Home, Customer KPI, RealTime, Maps, Campaign for Wifi Analytics related menu/pag
 */
 var express = require('express');
 var request = require('request');
-var configDetails = require('../config');
+var configDetails = require('./config');
 var router = express.Router();
 
 // var auth = {'user': configDetails.FORT_USERNAME,'pass': configDetails.FORT_PWD };
@@ -12,7 +12,7 @@ var auth = {};
 
 /* To get the prism token from the database as per user's login*/
 var sql = require('mssql');
-var app = require('../server');
+var app = require('./server');
 
 router.post('/getFortinetAuthentication', function(req, res) {
     var sqlRequest = new sql.Request();

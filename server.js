@@ -34,11 +34,11 @@ var port = process.env.PORT || configDetails.portNumber.port; // set our port
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-var routes = require('./routes/index');
-var sparkfly = require('./routes/sparkfly');
-var users = require('./routes/users');
-var prism = require('./routes/prism');
-var fortinet = require('./routes/fortinet');
+var routes = require('./index');
+var sparkfly = require('./sparkfly');
+var users = require('./users');
+var prism = require('./prism');
+var fortinet = require('./fortinet');
 
 app.use('/', routes);
 app.use('/sparkfly', sparkfly);

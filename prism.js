@@ -1,6 +1,6 @@
 var express = require('express');
 var request = require('request');
-var configDetails = require('../config');
+var configDetails = require('./config');
 var router = express.Router();
 // var headersAuth = configDetails.prismToken;
 var headersAuth = {};
@@ -8,7 +8,7 @@ var headersAuth = {};
 /* To get the prism token from the database as per user's login*/
 
 var sql = require('mssql');
-var app = require('../server');
+var app = require('./server');
 
 
 router.post('/generateToken', function(req, res) {

@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var sql = require('mssql');
-var configDetails = require('../config');
+var configDetails = require('./config');
 
 
 // To login
