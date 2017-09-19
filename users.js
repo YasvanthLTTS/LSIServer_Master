@@ -59,6 +59,9 @@ router.post('/login', function(req, res) {
     });
 });
 
+router.get('/test',function(req,res){
+    res.send('Test Services Success!!');
+});
 
 /* To get all users data */
 router.get('/getAllUsers', function(req, res) {
